@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #2b2a27;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #2b2a27;
+}
+
+/*-------------------------------------------
+Minoshibainu
+-------------------------------------------*/
+.flex {
+  display: flex;
+  margin-bottom: 60px;
+}
+.flex .image {
+  width: 50%;
+}
+.flex .image img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+.flex .Minoshibainu {
+  width: 50%;
+  padding: 40px 5% 0 5%;
+}
+.flex .Minoshibainu .page-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.flex .Minoshibainu .content-title {
+  border-bottom: solid 1px rgb(230, 142, 83);
+  width: 80%;
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin: 40px 0 15px 0;
+}
+.flex .Minoshibainu .ingredient-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex .Minoshibainu .ingredient-list dt {
+  width: 55%;
+  border-bottom: dotted 1px rgb(230, 165, 123);
+  padding: 6px 0;
+}
+
+/*-------------------------------------------
+Button
+-------------------------------------------*/
+.btn {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.btn a {
+  display: inline-block;
+  border: solid 3px rgb(230, 142, 83);
+  font-size: 20px;
+  padding: 30px 60px;
+  text-decoration: none;
+}
+
+/*-------------------------------------------
+Footer
+-------------------------------------------*/
+#footer {
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+}
+#footer .homepage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/*-------------------------------------------
+レスポンシブ対応
+-------------------------------------------*/
+@media screen and (max-width: 480px) {
+  .flex {
+    flex-direction: column;
+  }
+  .flex .image {
+    width: 100%;
+  }
+  .flex .image img {
+    height: auto;
+    width: auto;
+  }
+  .flex .Minoshibainu {
+    width: 100%;
+  }
+  .btn a {
+    display: inline-block;
+    border: solid 1px rgb(230, 142, 83);
+    font-size: 15px;
+    padding: 15px 30px;
+    text-decoration: none;
+  }
+}
